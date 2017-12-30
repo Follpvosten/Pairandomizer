@@ -1,0 +1,61 @@
+{
+  "scenes": [
+    {
+      "name": "Am Strand",
+      "messages": [
+        "%1$s und %2$s surfen.",
+        "%1$s und %2$s bauen Sandburgen.",
+        "%1$s und %2$s gehen schwimmen.",
+        "%1$s und %2$s tauchen.",
+        "%1$s und %2$s machen im Wasser rum und werden richtig feucht ( ͡° ͜ʖ ͡°)",
+        "%1$s buddelt %2$s im Sand ein.",
+        "%1$s liest ein Buch und %2$s bräunt sich.",
+        "%1$s schläft ein, bekommt einen Sonnenbrand und wird daraufhin von %2$s ausgelacht.",
+        "%1$s und %2$s liegen auf einem Handtuch und machen rum.",
+        "%1$s reibt %2$s mit Sonnencreme ein. Gründlich. ( ͡° ͜ʖ ͡°)",
+        "%1$s und %2$s spielen gegen irgendwen Volleyball.",
+        "%1$s und %2$s spielen Wasserball.",
+        "%1$s und %2$s gehen Krebse fangen.",
+        "%1$s sammelt Muscheln und zeigt sie %2$s. %2$s ist beeindruckt.",
+        "%1$s sammelt Muscheln und zeigt sie %2$s. %2$s ist es egal.",
+        "%1$s kippt die Luftmatratze um, auf der %2$s liegt.",
+        "%1$s und %2$s angeln im Meer.",
+        "%1$s und %2$s suchen den Strand mit einem Metalldetektor ab.",
+        "%1$s klaut %2$s den Sonnenschirm.",
+        "%1$s versucht, %2$s mit einem Sonnenschirm abzustechen."
+      ]
+    },
+    {
+      "name": "Campen am Fluss",
+      "messages": [
+        "%1$s und %2$s knutschen im Zelt rum.",
+        "%1$s und %2$s suchen Feuerholz.",
+        "%1$s versucht erfolglos, das Feuer anzuzünden, und wird von %2$s ausgelacht.",
+        "%1$s zündet erfolgreich das Feuer an. %2$s ist beeindruckt.",
+        "%1$s und %2$s gehen Kanu fahren.",
+        "%1$s und %2$s schwimmen im Fluss.",
+        "%1$s und %2$s veranstalten ein Wettangeln.",
+        "%1$s und %2$s sammeln Früchte und Beeren.",
+        "%1$s und %2$s kochen das Abendessen.",
+        "%1$s und %2$s gehen Essen jagen.",
+        "%1$s hat sich eine Dose Fertignahrung mitgebracht. %2$s findet das lustig.",
+        "%1$s und %2$s basteln sich Waffen aus Materialien der Umgebung.",
+        "%1$s und %2$s lassen Steine über den Fluss hüpfen.",
+        "%1$s erzählt eine gruselige Geschichte am Lagerfeuer. %2$s hat Angst.",
+        "%1$s erzählt eine gruselige Geschichte am Lagerfeuer. %2$s lacht.",
+        "%1$s erzählt eine gruselige Geschichte am Lagerfeuer. %2$s kuschelt sich vor Angst an %1$s.",
+        "%1$s und %2$s schleichen sich nachts heimlich in den Wald ( ͡° ͜ʖ ͡°)",
+        "%1$s und %2$s kuscheln sich zusammen in einen Schlafsack ( ͡° ͜ʖ ͡°)",
+        "%1$s röstet Marshmallows und füttert %2$s damit.",
+        "%1$s und %2$s versuchen, Sternbilder zu benennen."
+      ]
+    }
+  ],
+  "solo_messages": [
+    "%1$s macht bei letzteren mit.",
+    "%1$s ist forever alone…",
+    "%1$s versteckt sich und stalkt alle.",
+    "%1$s geht Kindern Süßigkeiten klauen.",
+    "%1$s jongliert mit Kokosnüssen."
+  ]
+}
