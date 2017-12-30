@@ -121,6 +121,26 @@
         "%1$s und %2$s sitzen im SwagCafé bei einem Kaffee und unterhalten sich.",
         "%1$s und %2$s stehen draußen vorm SwagDrive und foppen den Kassierer mit riesigen Bestellungen."
       ]
+    },
+    {
+      "name": "Multimediageschäft",
+      "messages": [
+        "%1$s und %2$s probieren alle Fernseher aus.",
+        "%1$s und %2$s machen mit den Kameras Selfies.",
+        "%1$s und %2$s stellen Fotos von sich auf allen Handys als Hintergrund ein.",
+        "%1$s öffnet Never Gonna Give You Up auf einem Tablet. %2$s lacht.",
+        "%1$s und %2$s besetzen alle Konsolen in der Spieleabteilung.",
+        "%1$s und %2$s sehen sich lustige USB-Sticks an.",
+        "%1$s und %2$s vergleichen die neusten SSDs und Festplatten.",
+        "%1$s und %2$s vergleichen die Prozessorleistung der Laptops.",
+        "%1$s und %2$s durchsuchen in der DVD-Abteilung die Animes.",
+        "%1$s sucht mit %2$s nach Shrek-DVDs, um sie in den Anime-Bereich zu stellen.",
+        "%1$s sucht mit %2$s nach Sexfilmen, um sie in den Horror-Bereich zu stellen.",
+        "%1$s und %2$s setzen sich auf Staubsauger.",
+        "%1$s klettert in den Kühlschrank und erschreckt %2$s.",
+        "%1$s und %2$s richten sich eine Geheimbasis in einer Waschmaschine ein.",
+        "%1$s posiert neben einer lebensgroßen Batman-Figur und %2$s macht Fotos."
+      ]
     }
   ],
   "solo_messages": [
