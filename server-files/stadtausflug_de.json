@@ -141,6 +141,26 @@
         "%1$s und %2$s richten sich eine Geheimbasis in einer Waschmaschine ein.",
         "%1$s posiert neben einer lebensgroßen Batman-Figur und %2$s macht Fotos."
       ]
+    },
+    {
+      "name": "Park",
+      "messages": [
+        "%1$s und %2$s spielen Frisbee.",
+        "%1$s wirft ein Frisbee. %2$s wird tödlich getroffen.",
+        "%1$s wirft das Frisbee. Bevor es %2$s erreicht, wird es von einem Hund weggeschnappt.",
+        "%1$s und %2$s veranstalten ein Picknick.",
+        "%1$s und %2$s machen auf der Picknickdecke rum.",
+        "%1$s und %2$s füttern sich beim Picknick verführerisch mit Essen.",
+        "%1$s und %2$s kaufen sich am Eisstand ein Eis.",
+        "%1$s und %2$s besetzen die Schaukeln.",
+        "%1$s und %2$s spielen im Sandkasten. %1$s klaut %2$s die Schaufel.",
+        "%1$s und %2$s machen auf einer Parkbank rum.",
+        "%1$s und %2$s gehen Eichhörnchen jagen.",
+        "%1$s und %2$s versuchen, die Eichhörnchen mit Nüssen anzulocken.",
+        "%1$s und %2$s veranstalten ein Wettrennen durch den Park.",
+        "%1$s und %2$s hüpfen wie die Affen von Baum zu Baum.",
+        "%1$s klaut kleinen Kindern die Süßigkeiten und kriegt davon eins von %2$s auf den Deckel."
+      ]
     }
   ],
   "solo_messages": [

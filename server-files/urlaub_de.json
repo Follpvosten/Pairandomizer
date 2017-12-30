@@ -54,11 +54,54 @@
       "name": "Wanderung durch die Berge",
       "messages": [
         "%1$s und %2$s verlaufen sich im Wald.",
-        "%1$s und %2$s machen in der ersten Berghütte rum.",
+        "%1$s und %2$s machen gleich in der ersten Berghütte rum.",
         "%1$s und %2$s machen einen auf Pfadfinder und analysieren Pferdeäpfel.",
         "%1$s macht nach 5 Minuten schon schlapp, genau wie %2$s.",
         "%1$s und %2$s machen die ganze Zeit Witze.",
-        "%1$s und %2$s singen fröhlich Wanderlieder."
+        "%1$s und %2$s singen fröhlich Wanderlieder.",
+        "%1$s fällt in eine Gletscherspalte. %2$s lacht.",
+        "%1$s fällt von einer Klippe. %2$s zieht %1$s wieder hoch.",
+        "%1$s fällt einen Abhang runter. %2$s trauert.",
+        "%1$s und %2$s machen ein Wettrennen zum Gipfel.",
+        "%1$s jodelt. %2$s lacht sich darüber kaputt.",
+        "%1$s sieht einen Steinbock und imitiert diesen. %2$s lacht.",
+        "%1$s versucht, einen Steinbock zu reiten, und wird abgeworfen. %2$s lacht.",
+        "%1$s und %2$s machen ein Picknick."
+      ]
+    },
+    {
+      "name": "Skiurlaub",
+      "messages": [
+        "%1$s failt beim Skifahren und wird von %2$s ausgelacht.",
+        "%1$s fährt Snowboard und wird dabei von %2$s angehimmelt.",
+        "%1$s und %2$s bauen einen Schneemann.",
+        "%1$s und %2$s bauen ein Iglu und machen darin rum.",
+        "%1$s und %2$s gehen langlaufen.",
+        "%1$s und %2$s fahren romantisch Schlittschuh.",
+        "%1$s und %2$s veranstalten eine Schneeballschlacht.",
+        "%1$s wirft einen Schneeball. %2$s wird tödlich getroffen.",
+        "%1$s und %2$s veranstalten einen Wettbewerb um die schönste Schneefigur.",
+        "%1$s und %2$s liegen im Schnee und machen rum.",
+        "%1$s und %2$s machen Schnee-Engel.",
+        "%1$s und %2$s kuscheln in der Berghütte vorm Kamin."
+      ]
+    },
+    {
+      "name": "City Tour",
+      "messages": [
+        "%1$s und %2$s fahren mit dem Hop-on, Hop-off Bus.",
+        "%1$s und %2$s gehen auf eine Sightseeing.",
+        "%1$s schleppt %2$s durch alle möglichen Museen und Kirchen. %2$s langweilt sich.",
+        "%1$s schleppt %2$s zu verschiedenen Attraktionen.",
+        "%1$s rennt wie wild von einer Sehenswürdigkeit zur anderen. %2$s ist erschöpft.",
+        "%1$s und %2$s setzen sich in ein gemütliches Café.",
+        "%1$s und %2$s gehen shoppen.",
+        "%1$s und %2$s gehen Souvenirs shoppen.",
+        "%1$s geht mit %2$s Parks und Gärten besichtigen.",
+        "%1$s macht klischeehafte Fotos von %2$s vor Sehenswürdigkeiten.",
+        "%1$s und %2$s gehen die Geheimtipps im Reiseführer durch.",
+        "%1$s und %2$s machen bei einer Führung durch die Stadt mit.",
+        "%1$s und %2$s machen ein Picknick im Park."
       ]
     }
   ],
