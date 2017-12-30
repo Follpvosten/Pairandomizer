@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pairandomizer</string>
+    <string name="randomize" translatable="false">Randomize!</string>
+    <string name="namesedit_hint">Write names here…</string>
+    <string name="change_server">Change server</string>
+    <string name="change_scenario">Change scenario</string>
+    <string name="scenario_options">Scenario options</string>
+    <string name="reload_data">Reload data</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_wait">Please wait</string>
+    <string name="loading_data">Loading data…</string>
+    <string name="error">Error</string>
+    <string name="error_invalid_ip">Your server IP is invalid. You need to change it.</string>
+    <string name="error_connecting">There was an error connecting to the server.</string>
+    <string name="error_invalid_json">The data provided by the server is invalid.</string>
+    <string name="error_saving_files">Error saving data from server.</string>
+    <string name="server_info">Server info</string>
+    <string name="server_info_message">Server name: %1$s\nServer comment: %2$s</string>
+    <string name="enabled_scenes">Enabled scenes</string>
+    <string name="info">Info</string>
+    <string name="info_all_disabled">You may not disable all scenes. The first option was enabled.</string>
+    <string name="error_no_names">Please enter at least one name.</string>
+</resources>

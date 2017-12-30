@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pairandomizer</string>
+    <string name="namesedit_hint">Namen hier schreiben…</string>
+    <string name="change_server">Server ändern</string>
+    <string name="change_scenario">Szenario ändern</string>
+    <string name="scenario_options">Szenario-Optionen</string>
+    <string name="reload_data">Daten neu laden</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="please_wait">Bitte warten</string>
+    <string name="loading_data">Daten werden geladen…</string>
+    <string name="error">Fehler</string>
+    <string name="error_invalid_ip">Die Server-IP ist ungültig. Bitte ändern.</string>
+    <string name="error_connecting">Bei der Verbindung zum Server ist ein Fehler aufgetreten.</string>
+    <string name="error_invalid_json">Die Daten des Servers sind ungültig.</string>
+    <string name="error_saving_files">Es gab ein Problem beim Speichern der Server-Daten.</string>
+    <string name="server_info">Server-Info</string>
+    <string name="server_info_message">Server-Name: %1$s\nServer-Kommentar: %2$s</string>
+    <string name="info">Info</string>
+    <string name="enabled_scenes">Aktivierte Szenen</string>
+    <string name="info_all_disabled">Es ist nicht möglich, alle Szenen zu deaktivieren. Die erste wurde aktiviert.</string>
+    <string name="error_no_names">Bitte mindestens einen Namen angeben!</string>
+</resources>

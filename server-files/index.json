@@ -1,0 +1,26 @@
+{
+  "server_name": "Default Server",
+  "comment": "This is the default server. Have fun!",
+  "scenarios": [
+    {
+      "name": "Stadtausflug (Tag)",
+      "lang": "de",
+      "filename": "stadtausflug_de.json"
+    },
+    {
+      "name": "Stadtausflug (Nacht)",
+      "lang": "de",
+      "filename": "stadtausflug_nacht_de.json"
+    },
+    {
+      "name": "Ausflug zum Strand",
+      "lang": "de",
+      "filename": "strandausflug_de.json"
+    },
+    {
+      "name": "Freizeitpark",
+      "lang": "de",
+      "filename": "freizeitpark_de.json"
+    }
+  ]
+}
