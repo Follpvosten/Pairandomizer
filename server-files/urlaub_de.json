@@ -3,7 +3,7 @@
     {
       "name": "Am Strand",
       "messages": [
-        "%1$s und %2$s surfen.",
+        "%1$s und %2$s surfen wie die coolen Dudes.",
         "%1$s und %2$s bauen Sandburgen.",
         "%1$s und %2$s gehen schwimmen.",
         "%1$s und %2$s tauchen.",
@@ -48,6 +48,17 @@
         "%1$s und %2$s kuscheln sich zusammen in einen Schlafsack ( ͡° ͜ʖ ͡°)",
         "%1$s röstet Marshmallows und füttert %2$s damit.",
         "%1$s und %2$s versuchen, Sternbilder zu benennen."
+      ]
+    },
+    {
+      "name": "Wanderung durch die Berge",
+      "messages": [
+        "%1$s und %2$s verlaufen sich im Wald.",
+        "%1$s und %2$s machen in der ersten Berghütte rum.",
+        "%1$s und %2$s machen einen auf Pfadfinder und analysieren Pferdeäpfel.",
+        "%1$s macht nach 5 Minuten schon schlapp, genau wie %2$s.",
+        "%1$s und %2$s machen die ganze Zeit Witze.",
+        "%1$s und %2$s singen fröhlich Wanderlieder."
       ]
     }
   ],
