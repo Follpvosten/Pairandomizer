@@ -83,14 +83,15 @@
         "%1$s und %2$s veranstalten einen Wettbewerb um die schönste Schneefigur.",
         "%1$s und %2$s liegen im Schnee und machen rum.",
         "%1$s und %2$s machen Schnee-Engel.",
-        "%1$s und %2$s kuscheln in der Berghütte vorm Kamin."
+        "%1$s und %2$s kuscheln in der Berghütte vorm Kamin.",
+        "%1$s fällt in den Schnee, bildet einen Schneeball und reißt %2$s mit."
       ]
     },
     {
       "name": "City Tour",
       "messages": [
         "%1$s und %2$s fahren mit dem Hop-on, Hop-off Bus.",
-        "%1$s und %2$s gehen auf eine Sightseeing.",
+        "%1$s und %2$s gehen auf eine Sightseeing-Tour.",
         "%1$s schleppt %2$s durch alle möglichen Museen und Kirchen. %2$s langweilt sich.",
         "%1$s schleppt %2$s zu verschiedenen Attraktionen.",
         "%1$s rennt wie wild von einer Sehenswürdigkeit zur anderen. %2$s ist erschöpft.",
@@ -102,6 +103,19 @@
         "%1$s und %2$s gehen die Geheimtipps im Reiseführer durch.",
         "%1$s und %2$s machen bei einer Führung durch die Stadt mit.",
         "%1$s und %2$s machen ein Picknick im Park."
+      ]
+    },
+    {
+      "name": "Safari",
+      "messages": [
+        "%1$s und %2$s betrachten alle Tiere mit großen Augen.",
+        "%1$s und %2$s sitzen auf dem Dach und kommunizieren mit den Affen.",
+        "%1$s versucht, den Hals einer Giraffe hochzuklettern. %2$s versucht, es zu verhindern.",
+        "%1$s versucht, ein Zebra zu reiten. %2$s hilft mit.",
+        "%1$s fotografiert %2$s vor verschiedenen Tieren.",
+        "%1$s versucht, Löwen zu zähmen. %2$s hat Angst.",
+        "%1$s und %2$s werden von einer anderen Gruppe für Attraktionen gehalten.",
+        "%1$s und %2$s wollen das Nashorn fest am Horn packen. ( ͡° ͜ʖ ͡°)"
       ]
     }
   ],
