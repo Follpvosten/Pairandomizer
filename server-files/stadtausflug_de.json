@@ -162,6 +162,20 @@
         "%1$s klaut kleinen Kindern die Süßigkeiten und kriegt davon eins von %2$s auf den Deckel.",
         "%1$s und %2$s rollen knutschend durch die Gegend und werfen unschuldige Passanten wie Bowling-Pins um."
       ]
+    },
+    {
+      "name": "Fitnesstudio",
+      "messages": [
+        "%1$s läuft auf dem Laufband. %2$s stellt es immer schneller, bis %1$s an die Wand fliegt.",
+        "%1$s läuft auf dem Laufband. %2$s stellt es immer schneller, aber %1$s hält mit. %2$s ist beeindruckt.",
+        "%1$s und %2$s machen in den Duschräumen rum.",
+        "%1$s reibt %2$s in der Dusche gründlich mit Seife ein. ( ͡° ͜ʖ ͡°)",
+        "%1$s stemmt 100 Kilo. %2$s sabbert.",
+        "%1$s kriegt nicht mal eine Hantel hoch, während %2$s locker 100 Kilo stemmt.",
+        "%1$s und %2$s machen bei einem Zumba-Kurs mit.",
+        "%1$s hilft %2$s mit Küssen bei Sit-ups.",
+        "%1$s fährt mit dem Trimm-Dich-Rad und wird dabei von %2$s angefeuert."
+      ]
     }
   ],
   "solo_messages": [
