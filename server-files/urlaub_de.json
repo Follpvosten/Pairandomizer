@@ -116,6 +116,26 @@
         "%1$s versucht, Löwen zu zähmen. %2$s hat Angst.",
         "%1$s und %2$s werden von einer anderen Gruppe für Attraktionen gehalten.",
         "%1$s und %2$s wollen das Nashorn fest am Horn packen. ( ͡° ͜ʖ ͡°)"
+        "%1$s reibt den Rüssel des Elefanten. %2$s wird dadurch angeturnt."
+      ]
+    },
+    {
+      "name": "Wasserpark",
+      "messages": [
+        "%1$s und %2$s rutschen gemeinsam die richtig lange, dunkle Rutsche runter. ( ͡° ͜ʖ ͡°)",
+        "%1$s und %2$s schwimmen zusammen Bahnen und unterhalten sich dabei.",
+        "%1$s versucht, %2$s zu ertränken.",
+        "%1$s und %2$s veranstalten eine Wasserschlacht.",
+        "%1$s und %2$s machen im Wasser rum.",
+        "%1$s und %2$s machen auf einer Liege rum.",
+        "%1$s und %2$s chillen im Whirlpool.",
+        "%1$s und %2$s nehmen an der Wassergymnastik teil.",
+        "%1$s und %2$s rennen im Naruto-Run von Pool zu Pool.",
+        "%1$s verhaut %2$s mit einer Schwimmnudel.",
+        "%1$s und %2$s liefern sich einen Fechtkampf mit Schwimmnudeln.",
+        "%1$s und %2$s streiten sich um eine Luftmatratze.",
+        "%1$s geht mit Schwimmflügeln ins Wasser. %2$s lacht.",
+        "%1$s ist Wasserscheu und faucht das Wasser an. %2$s findet das lustig."
       ]
     }
   ],
