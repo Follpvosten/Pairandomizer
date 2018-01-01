@@ -116,7 +116,9 @@
         "%1$s versucht, Löwen zu zähmen. %2$s hat Angst.",
         "%1$s und %2$s werden von einer anderen Gruppe für Attraktionen gehalten.",
         "%1$s und %2$s wollen das Nashorn fest am Horn packen. ( ͡° ͜ʖ ͡°)",
-        "%1$s reibt den Rüssel des Elefanten. %2$s wird dadurch angeturnt."
+        "%1$s reibt den Rüssel des Elefanten. %2$s wird dadurch angeturnt.",
+        "%1$s und %2$s haben die Kokosnuss geklaut.",
+        "%1$s und %2$s versuchen, auf einem Nilpferd zu reiten."
       ]
     },
     {
@@ -136,6 +138,51 @@
         "%1$s und %2$s streiten sich um eine Luftmatratze.",
         "%1$s geht mit Schwimmflügeln ins Wasser. %2$s lacht.",
         "%1$s ist Wasserscheu und faucht das Wasser an. %2$s findet das lustig."
+      ]
+    },
+    {
+      "name": "Zoo",
+      "messages": [
+        "%1$s und %2$s streicheln und füttern die Ziegen.",
+        "%1$s und %2$s streicheln die Schweinchen.",
+        "%1$s und %2$s streicheln süße Kaninchenbabys.",
+        "%1$s und %2$s steigen auf Esel und veranstalten ein Wettrennen.",
+        "%1$s und %2$s werden im Tropenhaus von einem Krokodil gejagt.",
+        "%1$s wird im Tropenhaus von Vögeln belagert. %2$s macht Fotos.",
+        "%1$s und %2$s knutschen rum.",
+        "%1$s spricht die Löwen an, wird angebrüllt und erschreckt sich zu Tode. %2$s lacht."
+      ]
+    },
+    {
+      "name": "Wüste",
+      "messages": [
+        "%1$s und %2$s reiten auf Kamelen.",
+        "%1$s und %2$s läuft gegen einen Kaktus. %2$s lacht.",
+        "%1$s versucht, auf eine Palme zu klettern, fällt runter und landet auf %2$s.",
+        "%1$s und %2$s springen an einer Oase ins Wasser.",
+        "%1$s fällt auf eine Fata Morgana rein und springt kopfüber in den Sand. %2$s lacht.",
+        "%1$s und %2$s missbrauchen Wasser aus einer Oase, um Sandburgen zu bauen.",
+        "%1$s und %2$s gehen Käfer sammeln.",
+        "%1$s wird von einem Skorpion gestochen. %2$s saugt das Gift aus.",
+        "%1$s und %2$s knutschen im Sand rum.",
+        "%1$s trinkt das letzte Wasser und wird dafür von %2$s fast umgebracht."
+      ]
+    },
+    {
+      "name": "Pyramide",
+      "messages": [
+        "%1$s und %2$s verlaufen sich.",
+        "%1$s löst alle möglichen Fallen aus, während %2$s vorsichtiger ist.",
+        "%1$s und %2$s finden einen Grabkammer von Tutanchamun und trinken mit ihm Tee.",
+        "%1$s und %2$s finden einen wertvollen Schatz.",
+        "%1$s und %2$s verstecken sich im Dunkeln und machen rum.",
+        "%1$s tritt in Treibsand. %2$s zieht %1$s wieder raus.",
+        "%1$s und %2$s werden von einer Mumie gejagt.",
+        "%1$s und %2$s werden von einem riesigen, rollenden Felsen verfolgt.",
+        "%1$s und %2$s entrinnen knapp einer Grube voll spitzer Stacheln.",
+        "%1$s versucht, eine Mumie zu bezirzen. %2$s fragt sich, was zur Hölle das soll.",
+        "%1$s und %2$s bleiben lieber vor der Pyramide stehen.",
+        "%1$s und %2$s versuchen, außen auf die Pyramide zu klettern."
       ]
     }
   ],
