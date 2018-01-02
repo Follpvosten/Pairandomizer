@@ -39,7 +39,7 @@ objects using the following scheme:
     * filename: The name of the file containing the scenario's scene texts.
     This file needs to be in the same directory on the server.
 
-### <scenario>.json
+### scenario_name.json
 These files are the ones listed in the `index.json` file. They can be named
 whatever you want and there can be as many as you want.
 
@@ -47,7 +47,7 @@ File content specification:
 
 * scenes: A list of single-scene definitions. They need to be JSON objects
 following this scheme:
-    * name: The name displayed in the dialog title.
+    * name: The name displayed in the dialog title and scene selection.
     * messages: A simple list of events that can occur randomly in a scene.
     Two names are submitted to them; the placeholders used are Java string
     placeholders: `%1$s` is the first name, and `%2$s` is the second name.
