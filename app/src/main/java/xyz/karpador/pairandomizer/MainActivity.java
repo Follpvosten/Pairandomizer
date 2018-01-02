@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             try {
                 serverSpecJson = new JSONObject(loadFile(INDEX_FILE));
-                // Loop through the files the server lists and download them all
                 JSONArray scenariosJson = serverSpecJson.getJSONArray("scenarios");
                 availableScenarios = new ArrayList<>();
                 for(int i = 0; i < scenariosJson.length(); i++) {
@@ -137,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.scenario_options:
                 showScenarioOptionsDialog();
+                return true;
+            case R.id.about:
+                showAboutDialog();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -326,6 +328,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         builder.show();
+    }
+
+    private void showAboutDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.about)
+                .setMessage(R.string.about_text)
+                .setPositiveButton(R.string.ok, null)
+                .show();
     }
 
     private class LoadDataTask extends AsyncTask<Void, Void, String> {

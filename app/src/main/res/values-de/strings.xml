@@ -21,4 +21,7 @@
     <string name="enabled_scenes">Aktivierte Szenen</string>
     <string name="info_all_disabled">Es ist nicht möglich, alle Szenen zu deaktivieren. Die erste wurde aktiviert.</string>
     <string name="error_no_names">Bitte mindestens einen Namen angeben!</string>
+    <string name="about">Über…</string>
+    <string name="about_text">Diese App ist Freie Software und wurde unter der GNU General
+        Public License Version 2 veröffentlicht.\nDer Quellcode befindet sich auf GitHub.</string>
 </resources>

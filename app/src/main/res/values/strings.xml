@@ -21,4 +21,7 @@
     <string name="info">Info</string>
     <string name="info_all_disabled">You may not disable all scenes. The first option was enabled.</string>
     <string name="error_no_names">Please enter at least one name.</string>
+    <string name="about">About…</string>
+    <string name="about_text">This app is Free Software and released under the GNU General
+        Public License Version 2.\nYou can find the source code on GitHub.</string>
 </resources>

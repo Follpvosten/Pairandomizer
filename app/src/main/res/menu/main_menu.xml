@@ -20,4 +20,8 @@
         android:id="@+id/scenario_options"
         android:title="@string/scenario_options"
         />
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        />
 </menu>
