@@ -137,7 +137,12 @@
         "%1$s und %2$s liefern sich einen Fechtkampf mit Schwimmnudeln.",
         "%1$s und %2$s streiten sich um eine Luftmatratze.",
         "%1$s geht mit Schwimmflügeln ins Wasser. %2$s lacht.",
-        "%1$s ist Wasserscheu und faucht das Wasser an. %2$s findet das lustig."
+        "%1$s ist Wasserscheu und faucht das Wasser an. %2$s findet das lustig.",
+        "%1$s und %2$s schwimmen um die Wette.",
+        "%1$s und %2$s messen sich darin, wer vom höheren Sprungturm springen kann.",
+        "%1$s springt vom Sprungturm und knallt %2$s auf den Kopf.",
+        "%1$s springt vom Sprungturm und wird von %2$s romantisch aufgefangen.",
+        "%1$s und %2$s haben einen romantischen Kuss unter Wasser."
       ]
     },
     {
@@ -150,7 +155,10 @@
         "%1$s und %2$s werden im Tropenhaus von einem Krokodil gejagt.",
         "%1$s wird im Tropenhaus von Vögeln belagert. %2$s macht Fotos.",
         "%1$s und %2$s knutschen rum.",
-        "%1$s spricht die Löwen an, wird angebrüllt und erschreckt sich zu Tode. %2$s lacht."
+        "%1$s spricht die Löwen an, wird angebrüllt und erschreckt sich zu Tode. %2$s lacht.",
+        "%1$s setzt sich auf eine Löwenstatue und %2$s macht Fotos.",
+        "%1$s kauft %2$s ein Eis. %2$s freut sich.",
+        "%1$s und %2$s füttern sich gegenseitig mit Zuckerwatte."
       ]
     },
     {
@@ -165,7 +173,9 @@
         "%1$s und %2$s gehen Käfer sammeln.",
         "%1$s wird von einem Skorpion gestochen. %2$s saugt das Gift aus.",
         "%1$s und %2$s knutschen im Sand rum.",
-        "%1$s trinkt das letzte Wasser und wird dafür von %2$s fast umgebracht."
+        "%1$s trinkt das letzte Wasser und wird dafür von %2$s fast umgebracht.",
+        "%1$s bewirft %2$s mit Sand. %2$s sagt \"Ich hasse Sand.\"",
+        "%1$s und %2$s bewerfen sich gegenseitig mit Sand."
       ]
     },
     {
@@ -183,6 +193,25 @@
         "%1$s versucht, eine Mumie zu bezirzen. %2$s fragt sich, was zur Hölle das soll.",
         "%1$s und %2$s bleiben lieber vor der Pyramide stehen.",
         "%1$s und %2$s versuchen, außen auf die Pyramide zu klettern."
+      ]
+    },
+    {
+      "name": "Gartenparty",
+      "messages": [
+        "%1$s steht am Grill und wird von %2$s angehimmelt.",
+        "%1$s und %2$s baden im Schwimmteich und spritzen alle an.",
+        "%1$s und %2$s warten ungeduldig auf das Essen und belagern den Grill.",
+        "%1$s und %2$s hüpfen von Baum zu Baum, wie die Affen.",
+        "%1$s und %2$s bauen ein Baumhaus.",
+        "%1$s und %2$s liegen im Gras und knutschen rum.",
+        "%1$s und %2$s liegen im Gras und deuten Wolkenformen.",
+        "%1$s versucht, %2$s zu fangen.",
+        "%1$s spielt mit %2$s verstecken.",
+        "%1$s versucht, %2$s im Schwimmteich unterzutauchen.",
+        "%1$s wirft %2$s in den Schwimmteich.",
+        "%1$s erschreckt %2$s beim Schwimmen im Teich.",
+        "%1$s und %2$s verziehen sich hinter einen Baum. ( ͡° ͜ʖ ͡°)",
+        "%1$s baut eine Staffelei auf und fängt an, ein Gemälde von %2$s zu malen."
       ]
     }
   ],
