@@ -24,4 +24,5 @@
     <string name="about">Über…</string>
     <string name="about_text">Diese App ist Freie Software und wurde unter der GNU General
         Public License Version 2 veröffentlicht.\nDer Quellcode befindet sich auf GitHub.</string>
+    <string name="share">Teilen</string>
 </resources>

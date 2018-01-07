@@ -3,6 +3,7 @@ package xyz.karpador.pairandomizer;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -69,8 +70,21 @@ public class MainActivity extends AppCompatActivity {
                                 .split("\n");
                 if(!names[0].isEmpty()) {
                     List<String> namesList = Arrays.asList(names);
-                    Scenario.SceneMessage sceneMessage = currentScenario.getRandomScene(namesList, random);
+                    final Scenario.SceneMessage sceneMessage = currentScenario.getRandomScene(namesList, random);
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                    builder.setNeutralButton(R.string.share, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int i) {
+                            Intent sendIntent = new Intent();
+                            sendIntent.setAction(Intent.ACTION_SEND);
+                            sendIntent.putExtra(
+                                    Intent.EXTRA_TEXT,
+                                    sceneMessage.title + "\n\n" + sceneMessage.message
+                            );
+                            sendIntent.setType("text/plain");
+                            startActivity(sendIntent);
+                        }
+                    });
                     builder.setTitle(sceneMessage.title)
                             .setMessage(sceneMessage.message)
                             .setPositiveButton(R.string.ok, null)
