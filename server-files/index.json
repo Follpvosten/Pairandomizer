@@ -23,6 +23,11 @@
       "filename": "freizeitpark_de.json"
     },
     {
+      "name": "Amusement park",
+      "lang": "en",
+      "filename": "Freizeitpark_en.json"
+    },
+    {
       "name": "Classic (Pairings)",
       "lang": null,
       "filename": "classic.json"
