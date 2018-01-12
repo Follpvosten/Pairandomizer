@@ -145,6 +145,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.reload_data:
                 new LoadDataTask().execute();
                 return true;
+            case R.id.settings:
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
             case R.id.change_scenario:
                 showScenarioChangeDialog();
                 return true;

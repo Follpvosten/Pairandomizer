@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/change_server"
         android:title="@string/change_server"
@@ -11,6 +13,8 @@
     <item
         android:id="@+id/reload_data"
         android:title="@string/reload_data"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        app:showAsAction="always"
         />
     <item
         android:id="@+id/change_scenario"
@@ -20,6 +24,11 @@
         android:id="@+id/scenario_options"
         android:title="@string/scenario_options"
         />
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/about"
         android:title="@string/about"
