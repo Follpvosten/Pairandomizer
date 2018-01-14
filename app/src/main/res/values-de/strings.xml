@@ -25,4 +25,14 @@
     <string name="about_text">Diese App ist Freie Software und wurde unter der GNU General
         Public License Version 2 veröffentlicht.\nDer Quellcode befindet sich auf GitHub.</string>
     <string name="share">Teilen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="pref_header_server">Server</string>
+    <string name="pref_header_scenario">Szenario-Optionen</string>
+    <string name="pref_server_title_ip">IP-Adresse</string>
+    <string name="pref_scenario_title_show_all">Alle Szenarios anzeigen</string>
+    <string name="pref_scenario_showall_summary_on">Szenarios in allen Sprachen sind sichtbar.</string>
+    <string name="pref_scenario_showall_summary_off">Nur Szenarios in Gerätesprache sind sichtbar.</string>
+    <string name="pref_scenario_title_sfw_only">Nur jugendfreie Szenarien anzeigen</string>
+    <string name="pref_scenario_summary_sfw_only">Noch nicht implementiert</string>
 </resources>

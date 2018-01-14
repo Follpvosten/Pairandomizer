@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="https://karpador.xyz/pairandomizer/"
+        android:inputType="textUri"
+        android:key="server_ip"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_server_title_ip" />
+
+</PreferenceScreen>

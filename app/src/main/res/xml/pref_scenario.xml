@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="scenario_show_all"
+        android:title="@string/pref_scenario_title_show_all"
+        android:summaryOn="@string/pref_scenario_showall_summary_on"
+        android:summaryOff="@string/pref_scenario_showall_summary_off"
+        />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:enabled="false"
+        android:key="scenario_sfw_only"
+        android:title="@string/pref_scenario_title_sfw_only"
+        android:summary="@string/pref_scenario_summary_sfw_only"
+        />
+
+</PreferenceScreen>
