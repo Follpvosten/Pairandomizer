@@ -34,6 +34,12 @@ import java.util.List;
  */
 public class SettingsActivity extends AppCompatPreferenceActivity {
 
+    public static final String SERVER_IP_CHANGED_KEY = "SERVER_IP_CHANGED";
+    public static final String SHOW_ALL_CHANGED_KEY = "SHOW_ALL_CHANGED";
+
+    private static boolean serverIPChanged;
+    private static boolean showAllChanged;
+
     /**
      * A preference value change listener that updates the preference's summary
      * to reflect its new value.
@@ -42,6 +48,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
+            if(preference.getKey().equals("server_ip")) {
+                serverIPChanged = true;
+            }
 
             if (preference instanceof ListPreference) {
                 // For list preferences, look up the correct display value in
@@ -96,6 +105,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        serverIPChanged = false;
+        showAllChanged = false;
         setupActionBar();
     }
 
@@ -110,17 +121,29 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         }
     }
 
+    private void handleGoBack() {
+        Intent result = new Intent();
+        result.putExtra(SERVER_IP_CHANGED_KEY, serverIPChanged);
+        result.putExtra(SHOW_ALL_CHANGED_KEY, showAllChanged);
+        setResult(RESULT_OK, result);
+        finish();
+    }
+
     @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home) {
             if (!super.onMenuItemSelected(featureId, item)) {
-                // FINISH HIM (so we don't start a new MainActivity)
-                finish();
+                handleGoBack();
             }
             return true;
         }
         return super.onMenuItemSelected(featureId, item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        handleGoBack();
     }
 
     /**
@@ -197,6 +220,14 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
+            findPreference("scenario_show_all").setOnPreferenceChangeListener(
+                    new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object o) {
+                    showAllChanged = true;
+                    return true;
+                }
+            });
         }
 
         @Override

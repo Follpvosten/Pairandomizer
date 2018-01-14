@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +15,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,6 +30,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 import xyz.karpador.pairandomizer.data.Scenario;
@@ -40,11 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String SERVERIP_KEY = "SERVER_IP";
     private static final String SERVERIP_DEFAULT = "https://karpador.xyz/pairandomizer/";
+    private static final int SETTINGS_ACTIVITY_REQUEST = 25566;
     private String serverIP;
 
     private JSONObject serverSpecJson;
 
+    private List<Scenario> allScenarios = new ArrayList<>();
     private List<Scenario> availableScenarios = new ArrayList<>();
+    private List<String> availableLanguages = new ArrayList<>();
     private static final String CURRENTSCENARIO_KEY = "CURRENT_SCENARIO";
     private Scenario currentScenario;
 
@@ -107,16 +111,27 @@ public class MainActivity extends AppCompatActivity {
             try {
                 serverSpecJson = new JSONObject(loadFile(INDEX_FILE));
                 JSONArray scenariosJson = serverSpecJson.getJSONArray("scenarios");
-                availableScenarios = new ArrayList<>();
+                allScenarios = new ArrayList<>();
+                availableLanguages = new ArrayList<>();
                 for(int i = 0; i < scenariosJson.length(); i++) {
                     JSONObject scenarioJson = scenariosJson.getJSONObject(i);
-                    availableScenarios.add(
+                    String lang =
+                            scenarioJson.isNull("lang")
+                                    ? null
+                                    : scenarioJson.getString("lang");
+                    allScenarios.add(
                             new Scenario(
                                     scenarioJson.getString("name"),
-                                    scenarioJson.getString("filename")
+                                    scenarioJson.getString("filename"),
+                                    lang
                             )
                     );
+                    if(lang != null) {
+                        if (!availableLanguages.contains(lang))
+                            availableLanguages.add(lang);
+                    }
                 }
+                availableScenarios = getAvailableScenarios(allScenarios);
                 loadScenario(getPreferences(Context.MODE_PRIVATE).getInt(CURRENTSCENARIO_KEY, 0));
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -136,9 +151,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
-            case R.id.change_server:
-                showServerDialog();
-                return true;
             case R.id.server_info:
                 showServerInfo();
                 return true;
@@ -147,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.settings:
                 Intent intent = new Intent(this, SettingsActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, SETTINGS_ACTIVITY_REQUEST);
                 return true;
             case R.id.change_scenario:
                 showScenarioChangeDialog();
@@ -167,6 +179,50 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         saveNames();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == SETTINGS_ACTIVITY_REQUEST) {
+            if(resultCode == RESULT_OK) {
+                if(data.getBooleanExtra(SettingsActivity.SERVER_IP_CHANGED_KEY, false)) {
+                    new LoadDataTask().execute();
+                }
+                else if(data.getBooleanExtra(SettingsActivity.SHOW_ALL_CHANGED_KEY, false)) {
+                    availableScenarios = getAvailableScenarios(allScenarios);
+                    try {
+                        loadScenario(0);
+                    } catch(IOException | JSONException ex) {
+                        new AlertDialog.Builder(this)
+                                .setTitle(R.string.error)
+                                .setMessage(R.string.error_loading_file)
+                                .setPositiveButton(R.string.ok, null)
+                                .show();
+                    }
+                }
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+
+    private List<Scenario> getAvailableScenarios(List<Scenario> currentScenarios) {
+        if(PreferenceManager.getDefaultSharedPreferences(this)
+                .getBoolean("scenario_show_all", false))
+            return currentScenarios;
+        List<Scenario> result = new ArrayList<>();
+        String lang = Locale.getDefault().getLanguage();
+        if(!availableLanguages.contains(lang))
+            lang = "en";
+        for(Scenario scenario : currentScenarios) {
+            if(scenario.getLang() == null) {
+                result.add(scenario);
+                continue;
+            }
+            if(scenario.getLang().equals(lang))
+                result.add(scenario);
+        }
+        return result;
     }
 
     private void loadNamesIfAny() {
@@ -224,32 +280,6 @@ public class MainActivity extends AppCompatActivity {
         }
         reader.close();
         return resultBuilder.toString();
-    }
-
-    private void showServerDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.change_server);
-
-        final EditText input = new EditText(this);
-        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_URI);
-        input.setText(serverIP);
-        builder.setView(input);
-
-        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int i) {
-                if(!serverIP.equals(input.getText().toString())) {
-                    serverIP = input.getText().toString();
-                    // One-liner to save the new IP in the preferences.
-                    // Let's hope it works.
-                    getPreferences(Context.MODE_PRIVATE).edit().putString(SERVERIP_KEY, serverIP).apply();
-                    new LoadDataTask().execute();
-                }
-            }
-        });
-        builder.setNegativeButton(R.string.cancel, null);
-
-        builder.show();
     }
 
     public void showServerInfo() {
@@ -379,7 +409,8 @@ public class MainActivity extends AppCompatActivity {
                 saveFile(INDEX_FILE, indexFileContent);
                 // Loop through the files the server lists and download them all
                 JSONArray scenariosJson = serverSpecJson.getJSONArray("scenarios");
-                availableScenarios = new ArrayList<>();
+                allScenarios = new ArrayList<>();
+                availableLanguages = new ArrayList<>();
                 for(int i = 0; i < scenariosJson.length(); i++) {
                     JSONObject scenarioJson = scenariosJson.getJSONObject(i);
                     String filename = scenarioJson.getString("filename");
@@ -389,10 +420,19 @@ public class MainActivity extends AppCompatActivity {
                     new JSONObject(fileContent);
                     // Valid JSON at this point, so save it
                     saveFile(filename, fileContent);
-                    availableScenarios.add(
-                            new Scenario(scenarioJson.getString("name"), filename)
+                    String lang =
+                            scenarioJson.isNull("lang")
+                                    ? null
+                                    : scenarioJson.getString("lang");
+                    allScenarios.add(
+                            new Scenario(scenarioJson.getString("name"), filename, lang)
                     );
+                    if(lang != null) {
+                        if (!availableLanguages.contains(lang))
+                            availableLanguages.add(lang);
+                    }
                 }
+                availableScenarios = getAvailableScenarios(allScenarios);
                 loadScenario(0);
             } catch (IOException e) {
                 e.printStackTrace();

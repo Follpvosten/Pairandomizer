@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">Pairandomizer</string>
     <string name="namesedit_hint">Namen hier schreiben…</string>
-    <string name="change_server">Server ändern</string>
     <string name="change_scenario">Szenario ändern</string>
     <string name="scenario_options">Szenario-Optionen</string>
     <string name="reload_data">Daten neu laden</string>
@@ -35,4 +34,5 @@
     <string name="pref_scenario_showall_summary_off">Nur Szenarios in Gerätesprache sind sichtbar.</string>
     <string name="pref_scenario_title_sfw_only">Nur jugendfreie Szenarien anzeigen</string>
     <string name="pref_scenario_summary_sfw_only">Noch nicht implementiert</string>
+    <string name="error_loading_file">Es gab ein Problem beim Laden des Scenarios.</string>
 </resources>

@@ -30,6 +30,7 @@ public class Scenario {
 
     private final String name;
     private final String filename;
+    private final String lang;
     private boolean dataLoaded = false;
 
     private final List<Scene> scenes = new ArrayList<>();
@@ -37,9 +38,10 @@ public class Scenario {
     private boolean[] enabledScenes;
     private int enabledCount = 0;
 
-    public Scenario(String name, String filename) {
+    public Scenario(String name, String filename, String lang) {
         this.name = name;
         this.filename = filename;
+        this.lang = lang;
     }
 
     public String getName() {
@@ -48,6 +50,10 @@ public class Scenario {
 
     public String getFilename() {
         return filename;
+    }
+
+    public String getLang() {
+        return lang;
     }
 
     public boolean[] getEnabledScenes() {
