@@ -48,8 +48,11 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
-            if(preference.getKey().equals("server_ip")) {
-                serverIPChanged = true;
+
+            if(preference.getSummary() != null) {
+                if (preference.getKey().equals("server_ip")) {
+                    serverIPChanged = true;
+                }
             }
 
             if (preference instanceof ListPreference) {
