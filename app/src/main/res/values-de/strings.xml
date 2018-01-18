@@ -35,4 +35,5 @@
     <string name="pref_scenario_title_sfw_only">Nur jugendfreie Szenarien anzeigen</string>
     <string name="pref_scenario_summary_sfw_only">Noch nicht implementiert</string>
     <string name="error_loading_file">Es gab ein Problem beim Laden des Scenarios.</string>
+    <string name="about_title">Über diese App</string>
 </resources>

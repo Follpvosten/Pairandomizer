@@ -38,4 +38,5 @@
     <string name="pref_scenario_title_sfw_only">Only show Safe For Work scenarios</string>
     <string name="pref_scenario_summary_sfw_only">Not implemented yet.</string>
     <string name="error_loading_file">There was a problem loading the scenario.</string>
+    <string name="about_title">About this app</string>
 </resources>

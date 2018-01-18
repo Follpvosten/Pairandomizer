@@ -380,7 +380,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showAboutDialog() {
         new AlertDialog.Builder(this)
-                .setTitle(R.string.about)
+                .setTitle(R.string.about_title)
                 .setMessage(R.string.about_text)
                 .setPositiveButton(R.string.ok, null)
                 .show();
