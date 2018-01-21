@@ -23,7 +23,7 @@ There is only one file that always has to have the same name:
 ### index.json
 This file contains a little bit of information about your server, followed by
 a list of the other files you want to provide, together with a display name
-and a language (which is not used at the moment, but will be in the future).
+and a language. 
 
 File content specification:
 
@@ -34,8 +34,8 @@ want, and is also displayed under "Server info".
 * scenarios: A list of scenario definitions. It needs to consist of JSON
 objects using the following scheme:
     * name: The name of the scenario, as it is displayed in the scenario list.
-    * lang: The language of the scenario. In the future, only scenarios of the
-    selected language will be displayed.
+    * lang: The language of the scenario. Only scenarios of the device language
+    will be displayed, unless the user wants to see all scenarios. 
     * filename: The name of the file containing the scenario's scene texts.
     This file needs to be in the same directory on the server.
 
