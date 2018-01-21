@@ -1,8 +1,8 @@
 # Pairandomizer
 An android app randomizing pairings and situations.  
 It pulls data from a server the user can specify.  
-At the moment, only german text is provided, but as soon as i have some
-scenarios translated to english, english language support will be included.
+Multiple languages are supported, and servers can provide text in as many
+languages as they can or want.
 
 ## Build instructions
 Use Android Studio. Open the project. Install the needed components.
