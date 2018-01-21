@@ -1,0 +1,3 @@
+Änderungen in v2.6:
+* Unnötiges neu laden verhindert 
+* "Über"-Dialog verbessert 

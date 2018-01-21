@@ -1,0 +1,15 @@
+This app loads so-called "scenarios" from a self-hostable, customizable
+server. Those scenarios can be provided in multiple languages, and consist of
+multiple possible scenes, which in turn consist of situations that happen
+between two characters (hence the "pairing" part). Those situations and
+characters are picked by chance (hence the "random" part).
+
+Just try it out by entering two or more (6+ recommended) character names and
+tapping the "Randomize!" button to see what happens!
+
+Contributions on GitHub are welcome, especially for improving or adding
+translations and new scenarios to the default server.
+
+Content warning: This is a project i'm doing for fun, and because i like to
+have some NSFW fun and i don't have that much time to work on it, the "Safe
+For Work" mode is not yet implemented. Sexual language and cursing may occur.

@@ -1,0 +1,17 @@
+Diese App lädt sogenannte "Szenarien" von einem selbst-hostbaren, flexibel
+anpassbaren Server. Diese Szenarien können in verschiedenen Sprachen vom
+Server zur Verfügung gestellt werden und bestehen aus mehreren "Szenen",
+die wiederum aus Situationen bestehen, die zwischen zwei Charakteren
+passieren (daher die "Paare"). Die Situationen und Paare werden zufällig
+ausgewählt (daher das "random").
+
+Zum Ausprobieren einfach mindestens zwei Namen eingeben (6+ empfohlen), auf
+"Randomize!" tippen und schauen, was passiert!
+
+Pull Requests auf GitHub sind immer willkommen, besonders, wenn es um neue
+Übersetzungen oder völlig neue Szenarien für den Standard-Server geht!
+
+Inhaltswarnung: Da ich dieses Projekt in meiner Freizeit zum Spaß mache und
+dabei viel Spaß haben will, aber nicht unendlich viel Zeit habe, funktioniert
+der jugendfreie Modus in der aktuellen Version noch nicht. Sexuelle
+Anspielungen (und Eindeutigkeiten) sowie Kraftausdrücke könnten vorkommen. 
