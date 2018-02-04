@@ -8,6 +8,8 @@ languages as they can or want.
 Use Android Studio. Open the project. Install the needed components.
 Build -> Make Project.
 
+You can also use the F-Droid build system.
+
 ## Running your own server
 Contributions to this repository are all welcome, especially if you want to
 help me with translations or adding scenarios in other languages!
@@ -16,14 +18,13 @@ But if you want to run your own server and serve your own scenarios and scenes,
 all you need is a web server. It can be any kind of web server, including stuff
 like free webspace, as long as you can put json files on it.  
 The directory `server-files` contains all the files that need to be on your
-server.
-
-There is only one file that always has to have the same name:
+server. They are all `.json` files containing a single JSON object. What
+follows is a description of the various files and their object scheme.
 
 ### index.json
 This file contains a little bit of information about your server, followed by
 a list of the other files you want to provide, together with a display name
-and a language. 
+and a language. This is the only file that has a fixed name.
 
 File content specification:
 
@@ -37,7 +38,9 @@ objects using the following scheme:
     * lang: The language of the scenario. Only scenarios of the device language
     will be displayed, unless the user wants to see all scenarios. 
     * filename: The name of the file containing the scenario's scene texts.
-    This file needs to be in the same directory on the server.
+    This file needs to be in the same directory on the server. In theory, the
+    filename might be a relative path under the index file's path, but that
+    is currently untested.
 
 ### scenario_name.json
 These files are the ones listed in the `index.json` file. They can be named
