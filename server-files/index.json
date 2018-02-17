@@ -1,6 +1,12 @@
 {
   "server_name": "Default Server",
   "comment": "This is the default server. Have fun!",
+  "beta": 
+    {
+      "name": "Extrem-Freizeit",
+      "lang": "de",
+      "filename": "extrem_freizeit_de.json"
+    },
   "scenarios": [
     {
       "name": "Stadtausflug (Tag)",
